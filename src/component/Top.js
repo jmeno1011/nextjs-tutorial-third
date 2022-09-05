@@ -6,7 +6,7 @@ export default function Top() {
         <div>
             <div style={{ display: 'flex', paddingTop: 20 }}>
                 <img src="/images/nextjs.png" alt="logo" style={{ display: 'block', width: 80 }} />
-                <Header as="h1">메노</Header>
+                <Header as="h1">테스트</Header>
             </div>
             <Gnb />
         </div>)
