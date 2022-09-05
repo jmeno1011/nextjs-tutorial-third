@@ -1,34 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Nextjs 강좌 (출처: 코딩앙마)
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
 ```
+Next js 모든 페이지 사전 렌더링 (Pre-rendering)
+더 좋은 퍼포먼스
+검색엔진최적화(SEO)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. 정적 생성
+2. Server Side Rendering (SSR, Dynamic Rendering)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+차이점은 언제 HTML 파일이 생성하는가
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+[정정 생성]
+- 프로젝트가 빌드하는 시점에서 html파일 생성
+- 모든 요청에 재사용
+- 퍼포먼스 이유로, Next js는 정적 생성을 권고
+- 정적 생성된 페이지들은 CDN에 캐시
+- 사용법 : getStaticProps / getStaticPaths
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+[Server Side Rendering]은 매 요청마다 html을 생성
+- 항상 최신 상태 유지
+- 사용법 : getServerSideProps
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
