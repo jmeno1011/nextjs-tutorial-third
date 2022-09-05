@@ -13,8 +13,7 @@ const Post = () => {
 
   function getDate() {
     axios.get(API_URL).then((res) => {
-      console.log(res.data);
-      setItem(res.data)
+      setItem(res.data);
     });
   }
 
@@ -25,7 +24,7 @@ const Post = () => {
     }
   }, []);
 
-  return <Item item={item}/>;
+  return <Item item={item} />;
 };
 
 export default Post;
