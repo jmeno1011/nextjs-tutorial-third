@@ -27,6 +27,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Home | 테스트</title>
+        <meta name="description" content="nextjs test 홈입니다."></meta>
       </Head>
       {isLoading && (
         <div style={{ padding: "300px 0" }}>

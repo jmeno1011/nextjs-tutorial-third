@@ -16,6 +16,7 @@ Next js 모든 페이지 사전 렌더링 (Pre-rendering)
 - 퍼포먼스 이유로, Next js는 정적 생성을 권고
 - 정적 생성된 페이지들은 CDN에 캐시
 - 사용법 : getStaticProps / getStaticPaths
+- 상품리스트나 도움말, 블로그 페이지같이 데이터 패칭이 한번 이뤄지는 곳에서는 서버사이드 렌더링을 할 필요가 없다.
 
 [Server Side Rendering]은 매 요청마다 html을 생성
 - 항상 최신 상태 유지
