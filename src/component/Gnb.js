@@ -3,7 +3,6 @@ import { Menu } from "semantic-ui-react"
 
 export default function Gnb(){
     const router = useRouter();
-    console.log(router);
 
     let activeItem;
     if(router.pathname==='/'){
