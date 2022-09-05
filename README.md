@@ -23,3 +23,18 @@ Next js 모든 페이지 사전 렌더링 (Pre-rendering)
 - 사용법 : getServerSideProps
 
 ```
+
+***
+
+env 사용법  
+
+```
+// node js
+
+process.env.변수명
+
+//browser
+
+process.env.NEXT_PUBLIC_변수명
+
+```
